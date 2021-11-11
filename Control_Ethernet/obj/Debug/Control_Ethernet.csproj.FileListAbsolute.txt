@@ -1,0 +1,13 @@
+C:\Users\USUARIO\source\repos\Control_Ethernet\bin\Debug\Control_Ethernet.exe.config
+C:\Users\USUARIO\source\repos\Control_Ethernet\bin\Debug\Control_Ethernet.exe
+C:\Users\USUARIO\source\repos\Control_Ethernet\bin\Debug\Control_Ethernet.pdb
+C:\Users\USUARIO\source\repos\Control_Ethernet\obj\Debug\Control_Ethernet.csprojAssemblyReference.cache
+C:\Users\USUARIO\source\repos\Control_Ethernet\obj\Debug\Control_Ethernet.Properties.Resources.resources
+C:\Users\USUARIO\source\repos\Control_Ethernet\obj\Debug\Control_Ethernet.csproj.GenerateResource.cache
+C:\Users\USUARIO\source\repos\Control_Ethernet\obj\Debug\Control_Ethernet.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\source\repos\Control_Ethernet\obj\Debug\Control_Ethernet.exe
+C:\Users\USUARIO\source\repos\Control_Ethernet\obj\Debug\Control_Ethernet.pdb
+C:\Users\USUARIO\source\repos\Control_Ethernet\obj\Debug\Control_Ethernet.Control.resources
+C:\Users\USUARIO\source\repos\Control_Ethernet\obj\Debug\Control_Ethernet.Login.resources
+C:\Users\USUARIO\source\repos\Control_Ethernet\obj\Debug\Control_Ethernet.Registro.resources
+C:\Users\USUARIO\source\repos\Control_Ethernet\obj\Debug\Control_Ethernet.ListaUsuarios.resources
