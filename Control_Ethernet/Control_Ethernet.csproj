@@ -59,11 +59,23 @@
     <Compile Include="Control.Designer.cs">
       <DependentUpon>Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="Eliminar_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar_user.Designer.cs">
+      <DependentUpon>Eliminar_user.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListaUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ListaUsuarios.Designer.cs">
       <DependentUpon>ListaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista_usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista_usuarios.Designer.cs">
+      <DependentUpon>Lista_usuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Operacion.cs">
       <SubType>Form</SubType>
@@ -85,14 +97,29 @@
     <Compile Include="Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registro_Personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Personal.Designer.cs">
+      <DependentUpon>Registro_Personal.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Control.resx">
       <DependentUpon>Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar_user.resx">
+      <DependentUpon>Eliminar_user.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListaUsuarios.resx">
       <DependentUpon>ListaUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Lista_usuarios.resx">
+      <DependentUpon>Lista_usuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion.resx">
+      <DependentUpon>Operacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,6 +133,9 @@
     </Compile>
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Personal.resx">
+      <DependentUpon>Registro_Personal.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -135,6 +165,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Captura.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_24704059-stock-photo-background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

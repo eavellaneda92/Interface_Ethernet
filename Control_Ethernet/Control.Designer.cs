@@ -30,7 +30,6 @@ namespace Control_Ethernet
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Control));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -62,23 +61,19 @@ namespace Control_Ethernet
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Control_Ethernet.Properties.Resources.Captura;
-            this.pictureBox1.Location = new System.Drawing.Point(388, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(660, 502);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 39);
+            this.label1.Location = new System.Drawing.Point(16, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 21);
             this.label1.TabIndex = 1;
@@ -88,7 +83,7 @@ namespace Control_Ethernet
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 74);
+            this.label2.Location = new System.Drawing.Point(16, 121);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 21);
             this.label2.TabIndex = 3;
@@ -98,7 +93,7 @@ namespace Control_Ethernet
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(19, 110);
+            this.label3.Location = new System.Drawing.Point(16, 157);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 21);
             this.label3.TabIndex = 5;
@@ -108,7 +103,7 @@ namespace Control_Ethernet
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(19, 146);
+            this.label4.Location = new System.Drawing.Point(16, 193);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 21);
             this.label4.TabIndex = 7;
@@ -118,7 +113,7 @@ namespace Control_Ethernet
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(19, 182);
+            this.label5.Location = new System.Drawing.Point(16, 229);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 21);
             this.label5.TabIndex = 9;
@@ -128,7 +123,7 @@ namespace Control_Ethernet
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(19, 218);
+            this.label6.Location = new System.Drawing.Point(16, 265);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 21);
             this.label6.TabIndex = 11;
@@ -138,7 +133,7 @@ namespace Control_Ethernet
             // 
             this.lbl_ip1.AutoSize = true;
             this.lbl_ip1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ip1.Location = new System.Drawing.Point(89, 39);
+            this.lbl_ip1.Location = new System.Drawing.Point(86, 86);
             this.lbl_ip1.Name = "lbl_ip1";
             this.lbl_ip1.Size = new System.Drawing.Size(57, 21);
             this.lbl_ip1.TabIndex = 12;
@@ -148,7 +143,7 @@ namespace Control_Ethernet
             // 
             this.lbl_ip2.AutoSize = true;
             this.lbl_ip2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ip2.Location = new System.Drawing.Point(89, 74);
+            this.lbl_ip2.Location = new System.Drawing.Point(86, 121);
             this.lbl_ip2.Name = "lbl_ip2";
             this.lbl_ip2.Size = new System.Drawing.Size(57, 21);
             this.lbl_ip2.TabIndex = 13;
@@ -158,7 +153,7 @@ namespace Control_Ethernet
             // 
             this.lbl_ip3.AutoSize = true;
             this.lbl_ip3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ip3.Location = new System.Drawing.Point(89, 110);
+            this.lbl_ip3.Location = new System.Drawing.Point(86, 157);
             this.lbl_ip3.Name = "lbl_ip3";
             this.lbl_ip3.Size = new System.Drawing.Size(57, 21);
             this.lbl_ip3.TabIndex = 14;
@@ -168,7 +163,7 @@ namespace Control_Ethernet
             // 
             this.lbl_ip4.AutoSize = true;
             this.lbl_ip4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ip4.Location = new System.Drawing.Point(89, 146);
+            this.lbl_ip4.Location = new System.Drawing.Point(86, 193);
             this.lbl_ip4.Name = "lbl_ip4";
             this.lbl_ip4.Size = new System.Drawing.Size(66, 21);
             this.lbl_ip4.TabIndex = 15;
@@ -178,7 +173,7 @@ namespace Control_Ethernet
             // 
             this.lbl_ip5.AutoSize = true;
             this.lbl_ip5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ip5.Location = new System.Drawing.Point(89, 182);
+            this.lbl_ip5.Location = new System.Drawing.Point(86, 229);
             this.lbl_ip5.Name = "lbl_ip5";
             this.lbl_ip5.Size = new System.Drawing.Size(66, 21);
             this.lbl_ip5.TabIndex = 16;
@@ -188,7 +183,7 @@ namespace Control_Ethernet
             // 
             this.lbl_ip6.AutoSize = true;
             this.lbl_ip6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ip6.Location = new System.Drawing.Point(89, 218);
+            this.lbl_ip6.Location = new System.Drawing.Point(86, 265);
             this.lbl_ip6.Name = "lbl_ip6";
             this.lbl_ip6.Size = new System.Drawing.Size(66, 21);
             this.lbl_ip6.TabIndex = 17;
@@ -196,7 +191,7 @@ namespace Control_Ethernet
             // 
             // EDIT1
             // 
-            this.EDIT1.Location = new System.Drawing.Point(233, 40);
+            this.EDIT1.Location = new System.Drawing.Point(230, 87);
             this.EDIT1.Name = "EDIT1";
             this.EDIT1.Size = new System.Drawing.Size(81, 23);
             this.EDIT1.TabIndex = 18;
@@ -206,7 +201,7 @@ namespace Control_Ethernet
             // 
             // EDIT2
             // 
-            this.EDIT2.Location = new System.Drawing.Point(233, 75);
+            this.EDIT2.Location = new System.Drawing.Point(230, 122);
             this.EDIT2.Name = "EDIT2";
             this.EDIT2.Size = new System.Drawing.Size(81, 23);
             this.EDIT2.TabIndex = 19;
@@ -216,7 +211,7 @@ namespace Control_Ethernet
             // 
             // EDIT3
             // 
-            this.EDIT3.Location = new System.Drawing.Point(233, 111);
+            this.EDIT3.Location = new System.Drawing.Point(230, 158);
             this.EDIT3.Name = "EDIT3";
             this.EDIT3.Size = new System.Drawing.Size(81, 23);
             this.EDIT3.TabIndex = 20;
@@ -226,7 +221,7 @@ namespace Control_Ethernet
             // 
             // EDIT4
             // 
-            this.EDIT4.Location = new System.Drawing.Point(233, 147);
+            this.EDIT4.Location = new System.Drawing.Point(230, 194);
             this.EDIT4.Name = "EDIT4";
             this.EDIT4.Size = new System.Drawing.Size(81, 23);
             this.EDIT4.TabIndex = 21;
@@ -236,7 +231,7 @@ namespace Control_Ethernet
             // 
             // EDIT5
             // 
-            this.EDIT5.Location = new System.Drawing.Point(233, 183);
+            this.EDIT5.Location = new System.Drawing.Point(230, 230);
             this.EDIT5.Name = "EDIT5";
             this.EDIT5.Size = new System.Drawing.Size(81, 23);
             this.EDIT5.TabIndex = 22;
@@ -246,7 +241,7 @@ namespace Control_Ethernet
             // 
             // EDIT6
             // 
-            this.EDIT6.Location = new System.Drawing.Point(233, 219);
+            this.EDIT6.Location = new System.Drawing.Point(230, 266);
             this.EDIT6.Name = "EDIT6";
             this.EDIT6.Size = new System.Drawing.Size(81, 23);
             this.EDIT6.TabIndex = 23;
@@ -256,7 +251,7 @@ namespace Control_Ethernet
             // 
             // REGISTRO
             // 
-            this.REGISTRO.Location = new System.Drawing.Point(23, 325);
+            this.REGISTRO.Location = new System.Drawing.Point(20, 372);
             this.REGISTRO.Name = "REGISTRO";
             this.REGISTRO.Size = new System.Drawing.Size(145, 34);
             this.REGISTRO.TabIndex = 24;
@@ -266,18 +261,19 @@ namespace Control_Ethernet
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(23, 365);
+            this.button1.Location = new System.Drawing.Point(20, 412);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(145, 32);
             this.button1.TabIndex = 25;
             this.button1.Text = "CONTROLAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(19, 9);
+            this.label7.Location = new System.Drawing.Point(16, 56);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(28, 21);
             this.label7.TabIndex = 26;
@@ -287,7 +283,7 @@ namespace Control_Ethernet
             // 
             this.lbl_ip.AutoSize = true;
             this.lbl_ip.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ip.Location = new System.Drawing.Point(53, 9);
+            this.lbl_ip.Location = new System.Drawing.Point(50, 56);
             this.lbl_ip.Name = "lbl_ip";
             this.lbl_ip.Size = new System.Drawing.Size(57, 21);
             this.lbl_ip.TabIndex = 27;
@@ -295,7 +291,7 @@ namespace Control_Ethernet
             // 
             // txt_ip
             // 
-            this.txt_ip.Location = new System.Drawing.Point(104, 260);
+            this.txt_ip.Location = new System.Drawing.Point(101, 307);
             this.txt_ip.Name = "txt_ip";
             this.txt_ip.Size = new System.Drawing.Size(190, 20);
             this.txt_ip.TabIndex = 28;
@@ -304,7 +300,7 @@ namespace Control_Ethernet
             // lbl_sms
             // 
             this.lbl_sms.AutoSize = true;
-            this.lbl_sms.Location = new System.Drawing.Point(31, 263);
+            this.lbl_sms.Location = new System.Drawing.Point(28, 310);
             this.lbl_sms.Name = "lbl_sms";
             this.lbl_sms.Size = new System.Drawing.Size(58, 13);
             this.lbl_sms.TabIndex = 29;
@@ -313,7 +309,7 @@ namespace Control_Ethernet
             // 
             // btn_ok
             // 
-            this.btn_ok.Location = new System.Drawing.Point(233, 288);
+            this.btn_ok.Location = new System.Drawing.Point(230, 335);
             this.btn_ok.Name = "btn_ok";
             this.btn_ok.Size = new System.Drawing.Size(80, 23);
             this.btn_ok.TabIndex = 30;
@@ -324,7 +320,7 @@ namespace Control_Ethernet
             // 
             // BTN_CERRAR
             // 
-            this.BTN_CERRAR.Location = new System.Drawing.Point(147, 288);
+            this.BTN_CERRAR.Location = new System.Drawing.Point(144, 335);
             this.BTN_CERRAR.Name = "BTN_CERRAR";
             this.BTN_CERRAR.Size = new System.Drawing.Size(80, 23);
             this.BTN_CERRAR.TabIndex = 31;
@@ -335,7 +331,7 @@ namespace Control_Ethernet
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(23, 403);
+            this.button2.Location = new System.Drawing.Point(20, 450);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(145, 33);
             this.button2.TabIndex = 32;
@@ -345,39 +341,80 @@ namespace Control_Ethernet
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(207, 325);
+            this.button3.Location = new System.Drawing.Point(204, 372);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(145, 34);
             this.button3.TabIndex = 33;
             this.button3.Text = "CREAR USUARIOS";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(207, 364);
+            this.button4.Location = new System.Drawing.Point(204, 411);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(145, 34);
             this.button4.TabIndex = 34;
             this.button4.Text = "ELIMINAR USUARIOS";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(207, 402);
+            this.button5.Location = new System.Drawing.Point(204, 449);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(145, 34);
             this.button5.TabIndex = 35;
             this.button5.Text = "VER USUARIOS";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(114, 452);
+            this.button6.Location = new System.Drawing.Point(111, 499);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(145, 34);
             this.button6.TabIndex = 36;
             this.button6.Text = "CONFIG. CORREOS";
             this.button6.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Control_Ethernet.Properties.Resources.Captura;
+            this.pictureBox1.Location = new System.Drawing.Point(385, 47);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(660, 502);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Location = new System.Drawing.Point(0, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1044, 40);
+            this.panel1.TabIndex = 37;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(868, 11);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(165, 26);
+            this.button7.TabIndex = 0;
+            this.button7.Text = "CERRAR SESION";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(27, 12);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(175, 21);
+            this.label8.TabIndex = 38;
+            this.label8.Text = "SISTEMA DE GESTION";
             // 
             // Control
             // 
@@ -385,7 +422,8 @@ namespace Control_Ethernet
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(1045, 501);
+            this.ClientSize = new System.Drawing.Size(1045, 561);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -418,12 +456,16 @@ namespace Control_Ethernet
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Control";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CONTROL ETHERNET";
             this.Load += new System.EventHandler(this.Control_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -463,6 +505,9 @@ namespace Control_Ethernet
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button7;
     }
 }
 

@@ -16,7 +16,7 @@ namespace Control_Ethernet
 {
     public partial class Control : Form
     {
-        int valor = 0;
+        int valor;
         string texto = "";
         public Control()
         {
@@ -201,7 +201,7 @@ namespace Control_Ethernet
         {
             string direccion = @"C:\Control";
             SaveFileDialog guardar = new SaveFileDialog();
-            guardar.Filter = "Text Files (.zip)|*.zip";
+            guardar.Filter = "tipo archivo (.zip)|*.zip";
             try
             {
                 if (guardar.ShowDialog() == DialogResult.OK)
@@ -214,6 +214,62 @@ namespace Control_Ethernet
             {
                 MessageBox.Show("ERROR AL GUARDAR ARCHIVO");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Operacion ventana = new Operacion();
+            ventana.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Registro_Personal VENTANA = new Registro_Personal();
+            VENTANA.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Eliminar_user ventana = new Eliminar_user();
+            ventana.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Lista_usuarios ventana = new Lista_usuarios();
+            ventana.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //Regitra el login
+            string path = "C:\\Control\\Registro_log.txt";
+
+            TextReader leer = new StreamReader("C:\\Control\\Login.txt");
+            string user = leer.ReadLine();
+            string fecha_in = leer.ReadLine();
+            string fecha_out = DateTime.Now.ToString();
+            leer.Close();
+            string ipx = "";
+
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (var ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    ipx = ip.ToString();
+                }
+            }
+
+            StreamWriter outfile = new StreamWriter(path, append: true);
+            outfile.WriteLineAsync(user);
+            outfile.WriteLineAsync(ipx);
+            outfile.WriteLineAsync(fecha_in);
+            outfile.WriteLineAsync(fecha_out);
+            outfile.Close();
+
+            //y cierra sesion
+            Application.Exit();
         }
     }
 }

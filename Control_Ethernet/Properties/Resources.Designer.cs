@@ -83,6 +83,16 @@ namespace Control_Ethernet.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap depositphotos_24704059_stock_photo_background {
+            get {
+                object obj = ResourceManager.GetObject("depositphotos_24704059-stock-photo-background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap i_manufacturing_testing_360x360 {
             get {
                 object obj = ResourceManager.GetObject("i-manufacturing-testing-360x360", resourceCulture);

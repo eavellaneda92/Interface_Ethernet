@@ -62,8 +62,30 @@ namespace Control_Ethernet
             chekeo();
         }
 
+        void registra_sesion()
+        {
+            string path = "C:\\Control\\Login.txt";
+            bool result = File.Exists(path);
+            if (result == true)
+            {
+                File.Delete(path);
+                StreamWriter outfile = new StreamWriter(path);
+                outfile.WriteLine(txt_name.Text);
+                outfile.WriteLine(DateTime.Now.ToString());
+                outfile.Close();
+            }
+            else
+            {
+                StreamWriter outfile = new StreamWriter(path);
+                outfile.WriteLine(txt_name.Text);
+                outfile.WriteLine(DateTime.Now.ToString());
+                outfile.Close();
+            }
+        }
+
         void chekeo()
         {
+            //Si es usuario general
             if (txt_name.Text == "ADMIN")
             {
                 if (txt_pass.Text == "Log2021")
@@ -79,7 +101,43 @@ namespace Control_Ethernet
             }
             else
             {
-                MessageBox.Show("Usuario incorrecto");
+                //Lectura de usuarios
+                //Busqueda de usuarios
+                DirectoryInfo di = new DirectoryInfo("C:\\Control\\USUARIOS\\");
+                DirectoryInfo[] diArr = di.GetDirectories();
+                bool correcto = false;
+                foreach (DirectoryInfo dri in diArr) { 
+                    string user = dri.Name.ToString();
+                    TextReader leer = new StreamReader("C:\\Control\\USUARIOS\\" + user + "\\Datos.txt");
+                    string name = leer.ReadLine();
+                    string pass = leer.ReadLine();
+                    string empresa = leer.ReadLine();
+                    string email = leer.ReadLine();
+                    string modo = leer.ReadLine();
+                    leer.Close();
+                    if(txt_name.Text == user)
+                    {
+                        if(txt_pass.Text == pass)
+                        {
+                            if (modo == "ADMINISTRADOR")
+                            {
+                                Control apertura = new Control();
+                                apertura.Show();
+                                this.Hide();
+                                correcto = true;
+                            }
+                            else
+                            {
+                                Operacion apertura = new Operacion();
+                                apertura.Show();
+                                this.Hide();
+                                correcto = true;
+                            }
+                            registra_sesion();
+                        }
+                    }
+                }
+                if(correcto == false) MessageBox.Show("Usuario no encontrado");
             }
         }
 
