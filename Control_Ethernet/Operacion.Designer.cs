@@ -83,7 +83,6 @@ namespace Control_Ethernet
             this.label5 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txt_ip1
@@ -171,6 +170,7 @@ namespace Control_Ethernet
             this.off11.TabIndex = 7;
             this.off11.Text = "APAGAR";
             this.off11.UseVisualStyleBackColor = true;
+            this.off11.Click += new System.EventHandler(this.off11_Click);
             // 
             // off12
             // 
@@ -180,6 +180,7 @@ namespace Control_Ethernet
             this.off12.TabIndex = 9;
             this.off12.Text = "APAGAR";
             this.off12.UseVisualStyleBackColor = true;
+            this.off12.Click += new System.EventHandler(this.off12_Click);
             // 
             // on12
             // 
@@ -189,6 +190,7 @@ namespace Control_Ethernet
             this.on12.TabIndex = 8;
             this.on12.Text = "ENCENDER";
             this.on12.UseVisualStyleBackColor = true;
+            this.on12.Click += new System.EventHandler(this.on12_Click);
             // 
             // off13
             // 
@@ -198,6 +200,7 @@ namespace Control_Ethernet
             this.off13.TabIndex = 11;
             this.off13.Text = "APAGAR";
             this.off13.UseVisualStyleBackColor = true;
+            this.off13.Click += new System.EventHandler(this.off13_Click);
             // 
             // on13
             // 
@@ -207,6 +210,7 @@ namespace Control_Ethernet
             this.on13.TabIndex = 10;
             this.on13.Text = "ENCENDER";
             this.on13.UseVisualStyleBackColor = true;
+            this.on13.Click += new System.EventHandler(this.on13_Click);
             // 
             // off14
             // 
@@ -216,6 +220,7 @@ namespace Control_Ethernet
             this.off14.TabIndex = 13;
             this.off14.Text = "APAGAR";
             this.off14.UseVisualStyleBackColor = true;
+            this.off14.Click += new System.EventHandler(this.off14_Click);
             // 
             // on14
             // 
@@ -225,6 +230,7 @@ namespace Control_Ethernet
             this.on14.TabIndex = 12;
             this.on14.Text = "ENCENDER";
             this.on14.UseVisualStyleBackColor = true;
+            this.on14.Click += new System.EventHandler(this.on14_Click);
             // 
             // off15
             // 
@@ -234,6 +240,7 @@ namespace Control_Ethernet
             this.off15.TabIndex = 15;
             this.off15.Text = "APAGAR";
             this.off15.UseVisualStyleBackColor = true;
+            this.off15.Click += new System.EventHandler(this.off15_Click);
             // 
             // on15
             // 
@@ -243,6 +250,7 @@ namespace Control_Ethernet
             this.on15.TabIndex = 14;
             this.on15.Text = "ENCENDER";
             this.on15.UseVisualStyleBackColor = true;
+            this.on15.Click += new System.EventHandler(this.on15_Click);
             // 
             // off16
             // 
@@ -252,6 +260,7 @@ namespace Control_Ethernet
             this.off16.TabIndex = 17;
             this.off16.Text = "APAGAR";
             this.off16.UseVisualStyleBackColor = true;
+            this.off16.Click += new System.EventHandler(this.off16_Click);
             // 
             // on16
             // 
@@ -261,6 +270,7 @@ namespace Control_Ethernet
             this.on16.TabIndex = 16;
             this.on16.Text = "ENCENDER";
             this.on16.UseVisualStyleBackColor = true;
+            this.on16.Click += new System.EventHandler(this.on16_Click);
             // 
             // label6
             // 
@@ -292,6 +302,7 @@ namespace Control_Ethernet
             this.off26.TabIndex = 30;
             this.off26.Text = "APAGAR";
             this.off26.UseVisualStyleBackColor = true;
+            this.off26.Click += new System.EventHandler(this.off26_Click);
             // 
             // on26
             // 
@@ -301,6 +312,7 @@ namespace Control_Ethernet
             this.on26.TabIndex = 29;
             this.on26.Text = "ENCENDER";
             this.on26.UseVisualStyleBackColor = true;
+            this.on26.Click += new System.EventHandler(this.on26_Click);
             // 
             // off25
             // 
@@ -310,6 +322,7 @@ namespace Control_Ethernet
             this.off25.TabIndex = 28;
             this.off25.Text = "APAGAR";
             this.off25.UseVisualStyleBackColor = true;
+            this.off25.Click += new System.EventHandler(this.off25_Click);
             // 
             // on25
             // 
@@ -319,6 +332,7 @@ namespace Control_Ethernet
             this.on25.TabIndex = 27;
             this.on25.Text = "ENCENDER";
             this.on25.UseVisualStyleBackColor = true;
+            this.on25.Click += new System.EventHandler(this.on25_Click);
             // 
             // off24
             // 
@@ -328,6 +342,7 @@ namespace Control_Ethernet
             this.off24.TabIndex = 26;
             this.off24.Text = "APAGAR";
             this.off24.UseVisualStyleBackColor = true;
+            this.off24.Click += new System.EventHandler(this.off24_Click);
             // 
             // on24
             // 
@@ -337,6 +352,7 @@ namespace Control_Ethernet
             this.on24.TabIndex = 25;
             this.on24.Text = "ENCENDER";
             this.on24.UseVisualStyleBackColor = true;
+            this.on24.Click += new System.EventHandler(this.on24_Click);
             // 
             // off23
             // 
@@ -346,6 +362,7 @@ namespace Control_Ethernet
             this.off23.TabIndex = 24;
             this.off23.Text = "APAGAR";
             this.off23.UseVisualStyleBackColor = true;
+            this.off23.Click += new System.EventHandler(this.off23_Click);
             // 
             // on23
             // 
@@ -355,6 +372,7 @@ namespace Control_Ethernet
             this.on23.TabIndex = 23;
             this.on23.Text = "ENCENDER";
             this.on23.UseVisualStyleBackColor = true;
+            this.on23.Click += new System.EventHandler(this.on23_Click);
             // 
             // off22
             // 
@@ -364,6 +382,7 @@ namespace Control_Ethernet
             this.off22.TabIndex = 22;
             this.off22.Text = "APAGAR";
             this.off22.UseVisualStyleBackColor = true;
+            this.off22.Click += new System.EventHandler(this.off22_Click);
             // 
             // on22
             // 
@@ -373,6 +392,7 @@ namespace Control_Ethernet
             this.on22.TabIndex = 21;
             this.on22.Text = "ENCENDER";
             this.on22.UseVisualStyleBackColor = true;
+            this.on22.Click += new System.EventHandler(this.on22_Click);
             // 
             // off21
             // 
@@ -382,6 +402,7 @@ namespace Control_Ethernet
             this.off21.TabIndex = 20;
             this.off21.Text = "APAGAR";
             this.off21.UseVisualStyleBackColor = true;
+            this.off21.Click += new System.EventHandler(this.off21_Click);
             // 
             // on21
             // 
@@ -391,6 +412,7 @@ namespace Control_Ethernet
             this.on21.TabIndex = 19;
             this.on21.Text = "ENCENDER";
             this.on21.UseVisualStyleBackColor = true;
+            this.on21.Click += new System.EventHandler(this.on21_Click);
             // 
             // label8
             // 
@@ -574,14 +596,6 @@ namespace Control_Ethernet
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(172, 420);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(632, 110);
-            this.textBox1.TabIndex = 51;
-            // 
             // Operacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -589,8 +603,7 @@ namespace Control_Ethernet
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(955, 582);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(955, 462);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label5);
@@ -650,6 +663,7 @@ namespace Control_Ethernet
             this.Name = "Operacion";
             this.Text = "Ethernet Control";
             this.Load += new System.EventHandler(this.Operacion_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mueve);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -710,6 +724,5 @@ namespace Control_Ethernet
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }

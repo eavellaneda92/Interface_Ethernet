@@ -91,6 +91,23 @@ namespace Control_Ethernet
                 if (txt_pass.Text == "Log2021")
                 {
                     Control apertura = new Control();
+                    string path = "C:\\Control\\Login.txt";
+                    bool result = File.Exists(path);
+                    if (result == true)
+                    {
+                        File.Delete(path);
+                        StreamWriter outfile = new StreamWriter(path);
+                        outfile.WriteLine("ADMIN");
+                        outfile.WriteLine(DateTime.Now.ToString());
+                        outfile.Close();
+                    }
+                    else
+                    {
+                        StreamWriter outfile = new StreamWriter(path);
+                        outfile.WriteLine("ADMIN");
+                        outfile.WriteLine(DateTime.Now.ToString());
+                        outfile.Close();
+                    }
                     apertura.Show();
                     this.Hide();
                 }
@@ -184,6 +201,11 @@ namespace Control_Ethernet
             {
                 MessageBox.Show("ERROR AL ABRIR ARCHIVO");
             }
+        }
+
+        private void titulo_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

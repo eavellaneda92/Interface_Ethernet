@@ -61,6 +61,7 @@ namespace Control_Ethernet
             this.titulo.Name = "titulo";
             this.titulo.Size = new System.Drawing.Size(328, 50);
             this.titulo.TabIndex = 0;
+            this.titulo.Paint += new System.Windows.Forms.PaintEventHandler(this.titulo_Paint);
             this.titulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mueve);
             // 
             // label3

@@ -11,6 +11,8 @@ using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.IO.Compression;
+using Microsoft.VisualBasic.Devices;
+using System.Runtime.InteropServices;
 
 namespace Control_Ethernet
 {
@@ -270,6 +272,24 @@ namespace Control_Ethernet
 
             //y cierra sesion
             Application.Exit();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        Computer mycomputer = new Computer();
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMenssage(System.IntPtr hwmd, int wmsg, int wparam, int lparam);
+
+        private void mueve(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMenssage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }
